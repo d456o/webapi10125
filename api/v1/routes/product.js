@@ -1,7 +1,7 @@
 const experss=require('express');
-const Router=experss.Router();
+const router=experss.Router();
 const {GetAll,GetById,AddNew,updateById,deletById}=require('../conttrolles/product');
-const { router } = require('../../../app');
+
 router.get('/',GetAll);
 router.get('/:id',GetById);
 router.post('/',AddNew);
